@@ -5,12 +5,18 @@ Try to use Google OAuth and obtain email.
 ## get Library
 go get -u google.golang.org/api/oauth2/v2
 
-## Create Credentials on Google Developer Console
+## Prepare Credentials
+Create Credentials on Google Developer Console
+https://console.developers.google.com/apis/
 And add http://localhost:5001/loginr into Authorised redirect URIs
 
-## Replace client info
+## Replace source code
 Replace "Your Client ID" and "Your Client Secret" to your credentials info
 
-## try
+## Try
 go run main.go
 try to access http://localhost:5001/login
+
+# Refer to
+https://developers.google.com/identity/protocols/OAuth2
+https://github.com/googleapis/google-api-go-client
